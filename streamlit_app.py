@@ -44,4 +44,3 @@ def main():
         st.text("The output is {}".format(label[result]))
 if __name__ == '__main__':
     main()
-
