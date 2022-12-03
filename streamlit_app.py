@@ -20,7 +20,7 @@ def predict(Gender, Married, Dependents, Education, Self_Employed,
     test_df.at[0,"Loan_Amount_Term"] = Loan_Amount_Term
     test_df.at[0,"Credit_History"] = Credit_History
     test_df.at[0,"Property_Area"] = Property_Area
-    result = Model.predict(test_df)[0]
+    result = Model.predict(test_df)
     
 def main():
     st.title("Loan Qualifying Procedure App")
