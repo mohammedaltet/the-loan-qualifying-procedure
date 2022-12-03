@@ -4,7 +4,8 @@ the loan qualifying procedure using machine learning
 
 The company seeks to automate (in real time) the loan qualifying procedure based on information given by customers while filling out an online application form. It is expected that the development of ML models that can help the company predict loan approval in accelerating decision-making process for determining whether an applicant is eligible for a loan or not.
 
-*The Link for the web site project = https://mohammedaltet-the-loan-qualifying-procedur-streamlit-app-r41xe1.streamlit.app/ Enter the customer details:
+*The Link for the web site project = https://mohammedaltet-the-loan-qualifying-procedur-streamlit-app-r41xe1.streamlit.app/ 
+Enter the customer details:
 
 Gender : Applicant gender (Male or Female)
 Married :	Applicant marital status (Married or not married)
