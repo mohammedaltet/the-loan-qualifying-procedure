@@ -20,20 +20,20 @@ def predict(Gender, Married, Dependents, Education, Self_Employed,
     test_df.at[0,"Loan_Amount_Term"] = Credit_History
     test_df.at[0,"Credit_History"] = Credit_History
     test_df.at[0,"Property_Area"] = Property_Area
-    result = Model.predict(test_df)[0]
+    result = Model.predict([test_df])[0]
     
 def main():
     st.title("Loan Qualifying Procedure App")
     Gender = st.selectbox("Gender" , ['Male', 'Female'])
-    Married = st.selectbox("Married" , [1, 0])
+    Married = st.selectbox("Married" , ['Yes', 'No'])
     Dependents = st.selectbox("Dependents" , ['0', '1', '2', '3+'])
     Education = st.selectbox("Education" , ['Graduate', 'Not Graduate'])
-    Self_Employed = st.selectbox("Self Employed or not" , [1, 0])
+    Self_Employed = st.selectbox("Self Employed or not" , ['Yes', 'No'])
     ApplicantIncome = st.slider("Applicant Income" , min_value=150, max_value=50000, value=0, step=1)
     CoapplicantIncome = st.slider("Coapplicant  Income" , min_value=0, max_value=20000, value=0, step=1)
     LoanAmount = st.slider("Loan  Amount" , min_value=5000, max_value=1000000, value=0, step=1)
     Loan_Amount_Term = st.selectbox("Loan Amount Term per day" , [360, 120, 240, 180,  60, 300, 480,  36,  84,  12])
-    Credit_History = st.selectbox("Credit History" , [1, 0])
+    Credit_History = st.selectbox("Credit History" , ['Good', 'Bad'])
     Property_Area = st.selectbox("Property Area" , ['Urban', 'Rural', 'Semiurban'])
     
  
