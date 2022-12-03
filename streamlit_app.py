@@ -33,7 +33,7 @@ def main():
     CoapplicantIncome = st.slider("Coapplicant  Income" , min_value=0, max_value=20000, value=0, step=1)
     LoanAmount = st.slider("Loan  Amount" , min_value=5000, max_value=1000000, value=0, step=1)
     Loan_Amount_Term = st.selectbox("Loan Amount Term per day" , [360, 120, 240, 180,  60, 300, 480,  36,  84,  12])
-    Credit_History = st.selectbox("Credit History" , ['Good', 'Bad'])
+    Credit_History = st.selectbox("Credit History" , ['Good','Bad'])
     Property_Area = st.selectbox("Property Area" , ['Urban', 'Rural', 'Semiurban'])
     
  
