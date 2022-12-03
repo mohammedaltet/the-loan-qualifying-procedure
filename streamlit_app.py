@@ -38,13 +38,13 @@ def main():
     
  
     if st.button('applicant is eligible for a loan or not?'):
-    pridc = predict(Gender, Married, Dependents, Education, Self_Employed,
-            ApplicantIncome, CoapplicantIncome, LoanAmount,
-            Loan_Amount_Term, Credit_History, Property_Area)
-            if pridc == 1:
-                        pridc = 'Yes'
-            elif pridc == 0:
-                        pridc = 'No'
-            st.success(f'{pridc}')
+        pridc = predict(Gender, Married, Dependents, Education, Self_Employed,
+        ApplicantIncome, CoapplicantIncome, LoanAmount,
+        Loan_Amount_Term, Credit_History, Property_Area)
+        if pridc == 1:
+            pridc = 'Yes'
+        elif pridc == 0:
+            pridc = 'No'
+        st.success(f'{pridc}')
 if __name__ == '__main__':
     main()
