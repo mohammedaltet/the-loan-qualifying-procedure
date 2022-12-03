@@ -30,3 +30,5 @@ Precision value is : 0.80
 Recall value is : 0.97
 F1 Score value is : 0.88
 with Test Score : 0.816
+
+![alt text](https://loanscanada.ca/wp-content/uploads/2016/04/116567372-1.jpg)
