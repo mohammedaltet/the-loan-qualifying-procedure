@@ -20,7 +20,7 @@ def predict(Gender, Married, Dependents, Education, Self_Employed,
     test_df.at[0,"Loan_Amount_Term"] = Loan_Amount_Term
     test_df.at[0,"Credit_History"] = Credit_History
     test_df.at[0,"Property_Area"] = Property_Area
-    result = Model.predict(test_df)
+    result = Model.predict(test_df)[0]
     
 def main():
     st.title("Loan Qualifying Procedure App")
@@ -44,10 +44,6 @@ def main():
         ApplicantIncome, CoapplicantIncome, LoanAmount,
         Loan_Amount_Term, Credit_History, Property_Area)
         pridc = predict(Gender, Married, Dependents, Education, Self_Employed,ApplicantIncome, CoapplicantIncome, LoanAmount,Loan_Amount_Term, Credit_History, Property_Area)
-        if pridc == 1:
-            pridc = 'Yes'
-        elif pridc == 0:
-            pridc = 'No'
         st.success(pridc)
 if __name__ == '__main__':
     main()
