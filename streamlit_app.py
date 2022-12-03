@@ -25,7 +25,7 @@ def predict(Gender, Married, Dependents, Education, Self_Employed,
     
 
 st.title("Loan Qualifying Procedure App")
-st.image("""https://lines-hub.com/wp-content/uploads/2019/09/IMG_2546-1170x780.jpg""")
+st.image("""https://loanscanada.ca/wp-content/uploads/2016/04/116567372-1.jpg""")
 st.header('Enter the customer details:')
 Gender = st.selectbox("Gender" , ['Male', 'Female'])
 Married = st.selectbox("Married" , ['Yes', 'No'])
