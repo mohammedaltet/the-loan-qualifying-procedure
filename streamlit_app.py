@@ -43,7 +43,11 @@ def main():
         result = predict(Gender, Married, Dependents, Education, Self_Employed,
         ApplicantIncome, CoapplicantIncome, LoanAmount,
         Loan_Amount_Term, Credit_History, Property_Area)
-        out = ["Fail" , "Success"]
-        st.text("The Resturant will {}".format(out[result]))
+        pridc = predict(Gender, Married, Dependents, Education, Self_Employed,ApplicantIncome, CoapplicantIncome, LoanAmount,Loan_Amount_Term, Credit_History, Property_Area)
+        if pridc == 1:
+            pridc = 'Yes'
+        elif pridc == 0:
+            pridc = 'No'
+        st.success(pridc)
 if __name__ == '__main__':
     main()
