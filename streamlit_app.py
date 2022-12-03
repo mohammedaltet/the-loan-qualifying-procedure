@@ -36,11 +36,15 @@ def main():
     Credit_History = st.selectbox("Credit History" , [1, 0])
     Property_Area = st.selectbox("Property Area" , ['Urban', 'Rural', 'Semiurban'])
     
-    if st.button("Predict"):
-        result = predict(Gender, Married, Dependents, Education, Self_Employed,
+ 
+    if st.button('applicant is eligible for a loan or not?'):
+    pridc = predict(Gender, Married, Dependents, Education, Self_Employed,
             ApplicantIncome, CoapplicantIncome, LoanAmount,
             Loan_Amount_Term, Credit_History, Property_Area)
-        label = ["Fail","Success"]
-        st.text("The output is {}".format(label[result]))
+    if pridc == 1:
+        pridc = 'Yes'
+    elif pridc == 0:
+        pridc = 'No'
+    st.success(f'{pridc}')
 if __name__ == '__main__':
     main()
