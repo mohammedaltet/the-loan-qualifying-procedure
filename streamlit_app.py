@@ -43,7 +43,7 @@ Property_Area = st.selectbox("Property Area" , ['Urban', 'Rural', 'Semiurban'])
 if st.button('applicant is eligible for a loan or not?'):
     pridc = predict(Gender, Married, Dependents, Education, Self_Employed,ApplicantIncome, CoapplicantIncome, LoanAmount,Loan_Amount_Term, Credit_History, Property_Area)
     if pridc == 1:
-        pridc = 'Yes'
+        pridc = 'Approved'
     elif pridc == 0:
-        pridc = 'No'
+        pridc = 'Not Approved'
     st.success(pridc)
